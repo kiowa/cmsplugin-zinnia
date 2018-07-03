@@ -41,7 +41,7 @@ class CMSLatestEntriesPlugin(ZinniaCMSPluginBase):
     """
     model = LatestEntriesPlugin
     name = _('Latest entries')
-    render_template = 'cmsplugin_zinnia/entry_list.html'
+    render_template = 'cmsplugin_zinnia/entry_detail.html'
     filter_horizontal = ['categories', 'authors', 'tags']
     fieldsets = (
         (None, {'fields': (
