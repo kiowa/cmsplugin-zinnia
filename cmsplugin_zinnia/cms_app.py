@@ -28,8 +28,11 @@ class ZinniaApphook(CMSApp):
     Zinnia's Apphook
     """
     name = _('Zinnia Weblog')
-    urls = APP_URLS
     menus = app_menus
     app_name = 'zinnia'
+    
+    def get_urls(self, page=None, language=None, **kwargs):
+        return APP_URLS
+
 
 apphook_pool.register(ZinniaApphook)
